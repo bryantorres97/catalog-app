@@ -16,8 +16,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           // primarySwatch: Colors.cyan,
-          scaffoldBackgroundColor: Colors.grey[300]),
-      initialRoute: LoginScreen.routeName,
+          scaffoldBackgroundColor: Colors.grey[300],
+          appBarTheme: const AppBarTheme(elevation: 0, color: Colors.indigo),
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+              backgroundColor: Colors.indigo, elevation: 0)),
+      initialRoute: HomeScreen.routeName,
       routes: {
         LoginScreen.routeName: (_) => const LoginScreen(),
         HomeScreen.routeName: (_) => const HomeScreen()
