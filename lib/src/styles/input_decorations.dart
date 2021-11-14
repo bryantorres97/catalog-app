@@ -12,7 +12,7 @@ class InputDecorations {
         focusedBorder: const UnderlineInputBorder(
             borderSide: BorderSide(color: Colors.deepPurple, width: 2)),
         hintText: hintText,
-        labelText: 'Correo electrónico',
+        labelText: labelText,
         labelStyle: const TextStyle(color: Colors.grey),
         prefixIcon: prefixIcon != null
             ? Icon(
